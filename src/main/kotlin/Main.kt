@@ -1,10 +1,9 @@
-import collections.kotlinArrays
 import collections.kotlinMaps
-import collections.kotlinSets
+import expressions.expressionsIfElse
 
 fun main(args: Array<String>) {
 
-    kotlinMaps()
+    expressionsIfElse()
 
 }
 
