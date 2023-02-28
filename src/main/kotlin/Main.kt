@@ -1,9 +1,8 @@
-import collections.kotlinMaps
-import expressions.expressionsIfElse
+import expressions.expressionIfElseAgeExercise
 
 fun main(args: Array<String>) {
 
-    expressionsIfElse()
+    expressionIfElseAgeExercise()
 
 }
 

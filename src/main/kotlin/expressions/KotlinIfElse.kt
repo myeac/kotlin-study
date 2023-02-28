@@ -35,25 +35,26 @@ fun expressionsIfElse() {
     println("esta persona tiene $cats gatos")
     println()
 
-    val petList = arrayListOf("cat","dot")
-    if(petList.isEmpty()){
+    val petList = arrayListOf("cat", "dot")
+    if (petList.isEmpty()) {
         println("gracias por darle casa a todos las mascotas")
-    }else{
+    } else {
         println("por favor, ven y adopta una mascota. tenemos $petList")
     }
 
+}
+
+fun expressionIfElseAgeExercise() {
 
     println("por favor, ingersa tu edad:")
-    val ageUser = (readlnOrNull() ?: "0").toInt()
-    val userStatus = if(ageUser in 0..13){
+    var ageUser = (readlnOrNull() ?: "0").toInt()
+    ageUser = if (ageUser == 0) 1 else ageUser
+    val userStatus = if (ageUser in 0..13) {
         "child"
-    }else if (ageUser in 14.. 18){
+    } else if (ageUser in 14..18) {
         "teen"
-    }else{
+    } else {
         "adulto"
     }
     println("el usuario es $userStatus")
-
-
-
 }
