@@ -46,7 +46,7 @@ fun whenConditionBetweenRange() {
 fun whenConditionalExercise() {
 
     println("cuantas comidas tienes al dia? - ")
-    val numberMeals = readlnOrNull()?.toInt() ?: 3
+    val numberMeals = readln().toIntOrNull() ?: 3
 
     when (numberMeals) {
         in 0..2 -> println("deberias de comer mas")
@@ -59,7 +59,7 @@ fun whenConditionalExercise() {
 fun whenConditionalTimeDay() {
 
     println("ingrese una hora en punto (0-23): ")
-    val hour = readlnOrNull()?.toInt() ?: 12
+    val hour = readln().toIntOrNull() ?: 12
     val statusDay = when (hour) {
         in 6..11 -> "amanecer"
         in 12..14 -> "medio dia"

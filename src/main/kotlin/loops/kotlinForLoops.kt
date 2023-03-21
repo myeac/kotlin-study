@@ -95,7 +95,7 @@ fun expressionForLoopsString() {
 //todo-important
 fun expressionLoopsAscending() {
     println("selecciona un numero:")
-    val numero = readlnOrNull()?.toInt() ?: 0
+    val numero = getInputNumber()
     var suma = 0
     for (i in 0..numero) {
         suma += i
@@ -107,7 +107,7 @@ fun expressionLoopsAscending() {
 //todo-important
 fun expressionLoopsDescending() {
     println("selecciona un numero:")
-    val numero = readlnOrNull()?.toInt() ?: 0
+    val numero = getInputNumber()
     var suma = 0
     for (i in numero downTo 0) {
         suma += i
@@ -119,9 +119,9 @@ fun expressionLoopsDescending() {
 //todo-important
 fun expressionLoopsDescendingStep() {
     println("ingrese un numero:")
-    val numero = readlnOrNull()?.toInt() ?: 0
+    val numero = getInputNumber()
     println("ingrese un paso:")
-    val pasos = readlnOrNull()?.toInt() ?: 0
+    val pasos = getInputNumber()
     println("lista descendente del numero $numero con pasos $pasos es:")
     for (i in numero downTo 0 step pasos) {
         println("el numero es $i")

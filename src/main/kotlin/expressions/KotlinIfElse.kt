@@ -1,5 +1,7 @@
 package expressions
 
+import getInputNumber
+
 fun expressionsIfElse() {
 
     val animal = arrayListOf<String>()
@@ -47,7 +49,7 @@ fun expressionsIfElse() {
 fun expressionIfElseAgeExercise() {
 
     println("por favor, ingersa tu edad:")
-    var ageUser = (readlnOrNull() ?: "0").toInt()
+    var ageUser = getInputNumber()
     ageUser = if (ageUser == 0) 1 else ageUser
     val userStatus = if (ageUser in 0..13) {
         "child"
