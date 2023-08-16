@@ -17,6 +17,8 @@ fun executeLambdaHighOrders() {
     lambdaSortByList()
     println("\nexample with --- maxBy")
     lambdaMaxBy()
+    println("\nexample with --- minBy")
+    lambdaMinBy()
 }
 
 fun lambdaWithForEach() {
@@ -42,6 +44,11 @@ fun lambdaSortByList() {
 
 fun lambdaMaxBy() {
     val max = arrayListOfNames.maxBy { it.length }
+    println(max)
+}
+
+fun lambdaMinBy() {
+    val max = arrayListOfNames.minBy { it.length }
     println(max)
 }
 
