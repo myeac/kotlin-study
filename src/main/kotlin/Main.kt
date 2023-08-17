@@ -1,15 +1,11 @@
-import expressions.expressionIfElseAgeExercise
+import lambdas.executeLambdaHighOrders
+import lambdas.threeDigitIntegerPrintMiddle
 
 fun main(args: Array<String>) {
 
-    expressionIfElseAgeExercise()
+    //llamar cualquier metodo
 
 }
-
-
-
-
-
 
 
 
