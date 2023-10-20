@@ -22,7 +22,7 @@ class Table {
     fun printInfo() {
         println("informaciones de la mesa: tiene $legs patas y una altura de $height")
     }
-}'
+}
 
 fun executeTable() {
     val table1 = Table()
