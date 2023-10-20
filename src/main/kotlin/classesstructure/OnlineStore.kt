@@ -23,8 +23,7 @@ class OnlineStore {
 
     fun canPurchase() {
         if (balance >= shirtValue) {
-            val howMuch = (balance / shirtValue)
-            when (howMuch) {
+            when (val howMuch = (balance / shirtValue)) {
                 1 -> { println("el usuario $userName puede comprar solo $howMuch camisa") }
                 else -> { println("el usuario $userName puede comprar $howMuch camisas") }
             }
