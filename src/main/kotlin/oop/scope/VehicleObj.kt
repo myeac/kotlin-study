@@ -1,4 +1,4 @@
-package scope
+package oop.scope
 
 open class AirplaneObj {
     protected var type = "airbus"

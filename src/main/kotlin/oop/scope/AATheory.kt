@@ -1,4 +1,4 @@
-package scope
+package oop.scope
 
 
 /*
@@ -6,7 +6,7 @@ package scope
 
 clases available on the block of code where they are declared
 
-classes can change scope of their variables/functions
+classes can change oop.scope of their variables/functions
 
 modifiers
 

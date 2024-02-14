@@ -1,4 +1,4 @@
-package scope
+package oop.scope
 
 class EncriptionLock(
     private val privateKey: Int,
