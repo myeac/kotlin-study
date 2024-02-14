@@ -1,4 +1,4 @@
-package inheritance
+package oop.inheritance
 
 open class Laptop {
     var screenSize = 15

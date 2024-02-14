@@ -1,4 +1,4 @@
-package inheritance
+package oop.inheritance
 
 open class Dog {
     var size = 0
