@@ -1,35 +1,37 @@
 package interfaces
 
-interface Restaurant {
-    fun provideFood()
-    fun provideBill()
+fun initRestaurant() {
+    var myFood: Food = FastFoodRestaurant().buyFood()
+    myFood.feed()
+
+    myFood = FrenchRestaurant().todaySpecial()
+    myFood.feed()
 }
 
-class LocalRestaurant : Restaurant {
-    override fun provideFood() {
-        println("tu local preferido que provee comida y bebidas")
-    }
-
-    override fun provideBill() {
-        println("por favor paga 25")
-    }
+interface Food {
+    fun feed()
 }
 
-class FancyRestaurant : Restaurant {
-    override fun provideFood() {
-        println("tu local preferido que provee comida y bebidas de alta calidad")
-    }
-
-    override fun provideBill() {
-        println("por favor paga 97")
+class FastFoot : Food {
+    override fun feed() {
+        println("fast food will feed you")
     }
 }
 
-fun executeRestaurant() {
-    val rest1 = LocalRestaurant()
-    rest1.provideFood()
-    rest1.provideBill()
-    val rest2 = FancyRestaurant()
-    rest2.provideFood()
-    rest2.provideBill()
+class FrenchFood : Food {
+    override fun feed() {
+        println("french food will feed you AND delight you")
+    }
+}
+
+class FastFoodRestaurant {
+    fun buyFood(): Food {
+        return FastFoot()
+    }
+}
+
+class FrenchRestaurant {
+    fun todaySpecial(): Food {
+        return FrenchFood()
+    }
 }
