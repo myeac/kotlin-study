@@ -13,7 +13,24 @@ obj can access other obj through their interfaces
 
 similar to abstract class
 
+interface has no constructor
+
+can implement methods but NO THE STEPS/ALGORITHM
+
+interface CANT initiate values, but CAN update them
+
+interface can INHERIT from antohjer interface
+
 can be used as variable types
 - instantiation
 
 */
+
+//example
+
+interface PlaceToSit {}
+interface PlaceToSleep {}
+
+class Couch : PlaceToSit, PlaceToSleep {
+
+}
