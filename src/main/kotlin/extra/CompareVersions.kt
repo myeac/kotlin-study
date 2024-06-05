@@ -40,21 +40,18 @@ fun getResultOfTwoVersions(
     currentV: VersionNameModel,
     firebaseV: VersionNameModel,
 ): VersionStatus {
-    var result = IGUAL
     currentV.resetIterator()
     firebaseV.resetIterator()
     while (currentV.isAvailable() || firebaseV.isAvailable()) {
         val diff = currentV.readAsInteger() - firebaseV.readAsInteger()
         if (diff > VALUE_ZERO) {
-            result = MAIOR
-            break
+            return MAIOR
         }
         if (diff < VALUE_ZERO) {
-            result = MENOR
-            break
+            return MENOR
         }
     }
-    return result
+    return IGUAL
 }
 
 enum class VersionStatus(
