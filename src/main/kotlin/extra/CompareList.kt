@@ -2,18 +2,31 @@ package extra
 
 const val stringPoint = "."
 const val versionSize = 2
+const val doNotShow = false
+const val show = true
 
 fun showInAppUpdate(
     currentVersion: List<Int>,
     initVersion: List<Int>,
     finalVersion: List<Int>,
 ): Boolean {
+    val validateNumbers = mutableListOf<Boolean>()
     for (version in 0..versionSize) {
-        if (currentVersion[version] !in initVersion[version]..finalVersion[version]) {
-            return true
-        }
+        if (currentVersion[version] in initVersion[version]..finalVersion[version])
+            validateNumbers.add(doNotShow)
+        else
+            validateNumbers.add(show)
     }
-    return false
+    return validateShowInAppUpdate(validateNumbers)
+}
+
+fun validateShowInAppUpdate(
+    list: List<Boolean>,
+): Boolean {
+    list.forEach {
+        if (it) return show
+    }
+    return doNotShow
 }
 
 fun String.versionNameToList(): List<Int> {
