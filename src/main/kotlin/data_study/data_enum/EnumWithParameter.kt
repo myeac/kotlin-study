@@ -1,4 +1,4 @@
-package data_enum
+package data_study.data_enum
 
 enum class ColorParameter(
     val timeUsed: Int,
