@@ -1,6 +1,6 @@
 package standardfun.take
 
-import extensions.getInputNumber
+import util.getInputNumber
 
 fun executeAddNumbers() {
     val numbers = arrayListOf<Int>()

@@ -1,7 +1,7 @@
 package standardfun.take
 
-import extensions.arrayListOfNames
-import extensions.arrayListOfNumbersInt
+import util.arrayListOfNames
+import util.arrayListOfNumbersInt
 
 fun executeListOfNumbers() {
 
