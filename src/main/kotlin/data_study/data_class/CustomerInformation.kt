@@ -1,4 +1,4 @@
-package data_class
+package data_study.data_class
 
 data class Customer(
     val name: String,

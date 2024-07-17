@@ -1,8 +1,8 @@
-package data_enum
+package data_study.data_enum
 
-import data_enum.GameStatesEnum.STARTED
-import data_enum.GameStatesEnum.PLAYING
-import data_enum.GameStatesEnum.GAMEOVER
+import data_study.data_enum.GameStatesEnum.STARTED
+import data_study.data_enum.GameStatesEnum.PLAYING
+import data_study.data_enum.GameStatesEnum.GAMEOVER
 
 enum class GameStatesEnum() {
     STARTED,
