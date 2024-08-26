@@ -1,4 +1,4 @@
-package extensions
+package util
 
 fun getInputNumber() = readln().toIntOrNull() ?: 0
 

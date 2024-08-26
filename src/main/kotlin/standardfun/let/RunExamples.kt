@@ -1,6 +1,6 @@
 package standardfun.let
 
-import extensions.arrayListAnimals
+import util.arrayListAnimals
 
 fun runLetExample() {
     val list = arrayListAnimals

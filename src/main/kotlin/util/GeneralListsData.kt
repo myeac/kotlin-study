@@ -1,4 +1,4 @@
-package extensions
+package util
 
 val arrayListOfNames = arrayListOf("alice", "bob", "carolina", "alex")
 
