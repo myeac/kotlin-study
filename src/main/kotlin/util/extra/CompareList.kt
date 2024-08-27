@@ -1,4 +1,4 @@
-package extra
+package util.extra
 
 const val stringPoint = "."
 const val versionSize = 2

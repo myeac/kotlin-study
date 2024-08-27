@@ -1,6 +1,6 @@
-package extra
+package util.extra
 
-import extra.VersionStatus.*
+import util.extra.VersionStatus.*
 
 const val INC = 10
 const val VALUE_ZERO = 0
