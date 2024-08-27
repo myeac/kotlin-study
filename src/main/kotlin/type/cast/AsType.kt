@@ -1,4 +1,4 @@
-package type_cast
+package type.cast
 
 /*
 as - checks whenever an object is of a certain type

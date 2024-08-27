@@ -1,4 +1,4 @@
-package type_cast
+package type.cast
 
 import kotlin.random.Random
 
